@@ -2,7 +2,7 @@
 
 
 import math
-from assignment_2_2022.msg import odom_custom_msg
+from second_assignment_rt1.msg import odom_custom_msg
 import rospy
 import os
 import sys
@@ -46,7 +46,13 @@ def subscriber(data):
         velocity=0
 
 
-
+def print_velocity():
+        
+        while True:
+            print(f"distance of robot to goal: {distance : .3f}")
+            print(f'average velocity of robot: {average_velocity: .3f}')
+            rate.sleep()
+	
 
 if __name__ == "__main__":
     try:
@@ -58,11 +64,10 @@ if __name__ == "__main__":
 
         # Read the data per second
         rate = rospy.Rate(rospy.get_param("/print_per_second"))
-
+	
         rospy.Subscriber("robot_informations", odom_custom_msg, subscriber)
+        
+        print_velocity()
 
-        print(f"distance of robot to goal: {distance : .3f}")
-        print(f'average velocity of robot: {average_velocity: .3f}')
-        rate.sleep()
     except rospy.ROSInterruptException:
         print("program interrupted before completion", file=sys.stderr)

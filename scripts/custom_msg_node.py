@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 import rospy
 from nav_msgs.msg import Odometry
-from assignment_2_2022.msg import odom_custom_msg
+from second_assignment_rt1.msg import odom_custom_msg
 import os
 import sys
 
