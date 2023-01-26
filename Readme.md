@@ -1,4 +1,4 @@
-#[Research_Track_1](https://unige.it/enoff.f/2021/ins/51201.html?codcla=10635),[Robotics Engineering](https://courses.unige.it/10635)([UNIGE](https://unige.it/it/)) : Second assignment
+##[Research_Track_1](https://unige.it/enoff.f/2021/ins/51201.html?codcla=10635),[Robotics Engineering](https://courses.unige.it/10635)([UNIGE](https://unige.it/it/)) : Second assignment
 
 ### Professor. [Carmine Recchiuto](https://github.com/CarmineD8)
 
@@ -10,7 +10,7 @@ It is also required to create a launch file to start the simulation.
 
 The new package was built alongside the package assignment_2_2022.
 The task of this assignment was to implement four new nodes in the robot simulation:
-![Tux, the Linux mascot](/RT/map.png)
+
 
 *	A node that implements an action client and enables users to set or cancel targets (x, y)or to cancel it.
 * A node that using the values posted on the topic, publish the robot's position and speed as a custom message(x,y, vel_x, vel_z), by relying on the values published on the topic /odom.
