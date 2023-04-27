@@ -45,7 +45,7 @@ $ catkin_make #properly build the workspace
 ```
 In this state we can run the code thanks to the launch file you can simply run all the nodes using the command:
 ```bash
-$ roslaunch second_assignment run.launch
+$ roslaunch second_assignment_rt1 second_assignment_rt1.launch
 ```
 
 Flowchart
